@@ -3,7 +3,7 @@ from settings import Settings
 from ship import Ship
 import game_functions as gf
 from pygame.sprite import Group
-from game_stats import GameStates
+from game_stats import GameStats
 from button import Button
 
 def run_game():
@@ -19,7 +19,7 @@ def run_game():
     play_button = Button(ai_settings, screen, "Play")
 
     # Create an instance to store game statistics.
-    stats = GameStates(ai_settings)
+    stats = GameStats(ai_settings)
 
     # Make a ship, a group of bullets, and a group of aliens.
     # Make a ship.
